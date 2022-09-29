@@ -30,7 +30,7 @@ uint16_t au16data[MAX_SIZE_REGISTER] = {1, 2};
 uint16_t inCount = 0, preInCount = 0; 
 
 
-Modbus slave(1,Serial,0); // this is slave @1 and RS-232 or USB-FTDI
+Modbus slave(DEVICE_ID,Serial,0); // this is slave @1 and RS-232 or USB-FTDI
 void setup() {
   Serial.setRx(PIN_RX);
   Serial.setTx(PIN_TX);
